@@ -10,4 +10,4 @@ the right answers for the specific person.<br>
 • MongoDB is used for saving the users,friends,question-answers data.<br>
 • Mongoose is used as library.<br>
 
-
+![](quiz1.png)|![](quiz2.png)|
