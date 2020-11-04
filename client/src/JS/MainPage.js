@@ -1,7 +1,7 @@
 import React from 'react';
 import MainPageText from './MainPageText';
 import NameBar from './NameBar';
-import './mainpage.css'
+import '../Assets/mainpage.css'
 
 class MainPage extends React.Component {
   

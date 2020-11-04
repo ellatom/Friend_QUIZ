@@ -1,6 +1,6 @@
 import React from 'react';
 import api from './api';
-import './scoreboard.css'
+import '../Assets/scoreboard.css'
 
 
 class ScoreBoard extends React.Component {

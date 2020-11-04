@@ -5,7 +5,7 @@ import axios from 'axios';
 
 //get results per userId
 async function createUser(username) {
-    // debugger;
+    debugger;
     return (await axios.post(`/api/quiz/${username}/create`));
 }
 async function updateUser(username) {

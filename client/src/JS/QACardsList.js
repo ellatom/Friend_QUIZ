@@ -1,6 +1,6 @@
 import React from 'react';
 import CardDetails from './CardDetails';
-import './qacardlist.css'
+import '../Assets/qacardlist.css'
 
 class QACardsList extends React.Component {
 

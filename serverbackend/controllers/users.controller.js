@@ -1,9 +1,10 @@
 //save to file
-const fs = require('fs');
-let usersPath = '../userQA.json';
-let friendsPath = '../friends.json';
-let qaBankPath = '../qaBank.json';
+// let usersPath = '../userQA.json';
+// let friendsPath = '../friends.json';
+// let qaBankPath = '../qaBank.json';
+
 //save to mongoDB
+const fs = require('fs');
 const mongoose = require('mongoose');
 
 const express = require('express')
@@ -155,7 +156,7 @@ function getSummaryByNameToFile(req, res) {
 //Note:to run this again with shlomi he should be removed from userQA
 //ok
 exports.createNewUser = (async (req, res) => {
-
+    // debugger;
     try {
         let user = await Users.findOne({ userName: req.params.username });
 

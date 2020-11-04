@@ -2,13 +2,15 @@ import React from 'react';
 import history from './history';
 import api from './api';
 import QACardsList from './QACardsList';
-import './questionanswercard.css'
+import '../Assets/questionanswercard.css'
+import axios from 'axios';
 
 class QuestionAnswerCard extends React.Component {
 
   state = { username: null, answer: "", pageIndex: 1, question: "", answers: [] }
 
   componentDidMount = async () => {
+    axios.get('/api/test');
     console.log("Inside component did mount")
     this.showPage();
   }
@@ -40,7 +42,7 @@ class QuestionAnswerCard extends React.Component {
 
         if (this.props.location.state.flow === 'friend') {
 
-          let a = await this.saveFriendProfile();
+          await this.saveFriendProfile();
 
           this.showPage(this.state.pageIndex);
 

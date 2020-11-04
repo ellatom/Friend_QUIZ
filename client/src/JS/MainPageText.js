@@ -1,5 +1,5 @@
 import React from 'react';
-import './mainpagetext.css';
+import '../Assets/mainpagetext.css';
 
 class MainPageText extends React.Component {
 

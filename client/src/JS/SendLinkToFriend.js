@@ -1,5 +1,5 @@
 import React from 'react';
-import './sendlinktofriend.css'
+import '../Assets/sendlinktofriend.css'
 
 
 class SendLinkToFriend extends React.Component {

@@ -1,7 +1,7 @@
 import React from 'react';
 import history from './history';
 import api from './api';
-import './namebar.css';
+import '../Assets/namebar.css';
 
 class NameBar extends React.Component {
 
@@ -21,7 +21,7 @@ class NameBar extends React.Component {
   }
 
   handleUserProfileFlow=async()=>{
-    // debugger;
+    debugger;
     console.log("user flow");
     let response = await api.createUser(this.state.name);
     console.log(response);

@@ -9,9 +9,10 @@ module.exports=function(app){
     app.use(express.json());//must add to read body
     app.use(express.urlencoded());
 
-    // debugger;
+    debugger;
     app.get('/api/quiz/results/:userId',users.getUserQA);
     app.get('/api/quiz/:username/get-question',users.getQuestionByUserName);
+    app.get('/api/test',(req,res)=> res.send({response:"Testtttttt"}));
     app.post('/api/quiz/:username/create',users.createNewUser);
     app.put('/api/quiz/:username/update', users.updateUserAnswer);
     app.post('/api/quiz/:username/answer', users.updateFriendAnswerForUser);
